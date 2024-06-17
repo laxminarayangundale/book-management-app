@@ -1,0 +1,69 @@
+
+.display-books{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Initial width, adjust as needed */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-details {
+    font-size: 14px;
+    color: #555;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.card-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+@media (max-width: 320px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+}
